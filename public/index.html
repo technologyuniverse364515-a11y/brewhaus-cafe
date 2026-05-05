@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A cozy neighborhood cafe — crafted coffee, warm vibes, live events." />
+  <title>Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="home">
+  <nav class="nav" id="nav"></nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"><img id="heroImg" alt="" /></div>
+    <div class="container hero-content">
+      <span class="eyebrow" id="heroEyebrow"></span>
+      <h1 id="heroTitle"></h1>
+      <p id="heroSubtitle"></p>
+      <div class="hero-ctas">
+        <a id="heroBtn1" class="btn btn-primary" href="#"></a>
+        <a id="heroBtn2" class="btn btn-ghost" href="#"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TODAY'S SPECIAL -->
+  <div class="container">
+    <div class="special">
+      <div>
+        <span class="eyebrow" id="specialEyebrow"></span>
+        <h2 id="specialTitle"></h2>
+        <p id="specialDesc"></p>
+        <div class="price" id="specialPrice"></div>
+        <a id="specialBtn" class="btn btn-primary" href="#"></a>
+      </div>
+      <img id="specialImg" alt="Today's special" />
+    </div>
+  </div>
+
+  <!-- OFFERS PREVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Offers</span>
+        <h2 id="offersTitle"></h2>
+        <p id="offersSubtitle"></p>
+      </div>
+      <div class="grid grid-3" id="offersPreview"></div>
+      <div style="text-align:center;margin-top:36px"><a id="offersCta" class="btn btn-outline" href="#"></a></div>
+    </div>
+  </section>
+
+  <!-- EVENTS PREVIEW -->
+  <section class="section alt-bg">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Happening</span>
+        <h2 id="eventsTitle"></h2>
+        <p id="eventsSubtitle"></p>
+      </div>
+      <div class="grid grid-3" id="eventsPreview"></div>
+      <div style="text-align:center;margin-top:36px"><a id="eventsCta" class="btn btn-outline" href="#"></a></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Voices</span>
+        <h2 id="testimonialsTitle"></h2>
+      </div>
+      <div class="testi-grid" id="testimonials"></div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="section alt-bg">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Instagram</span>
+        <h2 id="instaTitle"></h2>
+        <p id="instaSubtitle"></p>
+      </div>
+      <div class="insta-grid" id="instaGrid"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2 id="faqTitle"></h2>
+      </div>
+      <div class="faq-wrap" id="faqWrap"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section alt-bg" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Find Us</span>
+        <h2 id="contactTitle"></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Address:</strong> <span id="contactAddress"></span></p>
+          <p><strong>Phone:</strong> <span id="contactPhone"></span></p>
+          <p><strong>Email:</strong> <span id="contactEmail"></span></p>
+          <p><strong>Hours:</strong> <span id="contactHours"></span></p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">
+            <a id="contactCallBtn" class="btn btn-primary" href="#"></a>
+            <a id="contactDirBtn" class="btn btn-outline" href="#" target="_blank" rel="noopener"></a>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Brooklyn+NY&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+  <div class="sticky-cta" id="stickyCta"></div>
+
+  <script src="config/buttons.js"></script>
+  <script src="config/text.js"></script>
+  <script src="config/messages.js"></script>
+  <script src="config/images.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
