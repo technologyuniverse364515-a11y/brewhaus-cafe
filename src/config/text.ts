@@ -1,0 +1,53 @@
+export const text = {
+  cafeName: "The Brew House",
+  heroTitle: "Fresh Coffee. Cozy Vibes.",
+  heroSubtitle: "Your Favorite Neighborhood Cafe",
+  aboutTitle: "Our Story",
+  aboutText:
+    "Born from a love of exceptional coffee and warm community, The Brew House has been a neighborhood favorite since 2018. We source our beans from sustainable farms across Colombia, Ethiopia, and Guatemala — roasting them in small batches to bring out their unique character. Every cup is handcrafted with care, and every visit feels like coming home.",
+  aboutHighlight: "Handcrafted with love since 2018",
+  menuTitle: "Our Menu",
+  menuSubtitle: "Crafted with the finest ingredients",
+  galleryTitle: "Our Space",
+  gallerySubtitle: "Step inside and feel the warmth",
+  contactTitle: "Visit Our Cafe",
+  contactSubtitle: "We'd love to see you",
+  address: "742 Evergreen Ave, Brooklyn, NY 11201",
+  phone: "+1 (234) 567-890",
+  email: "hello@thebrewhouse.com",
+  hours: [
+    { day: "Monday – Friday", time: "7:00 AM – 8:00 PM" },
+    { day: "Saturday", time: "8:00 AM – 9:00 PM" },
+    { day: "Sunday", time: "9:00 AM – 6:00 PM" },
+  ],
+  menuItems: {
+    coffee: [
+      { name: "House Espresso", description: "Bold, smooth single origin", price: "$3.50" },
+      { name: "Cappuccino", description: "Creamy foam, rich espresso", price: "$4.50" },
+      { name: "Iced Latte", description: "Chilled, silky, refreshing", price: "$5.00" },
+      { name: "Pour Over", description: "Hand-brewed to perfection", price: "$4.00" },
+      { name: "Matcha Latte", description: "Ceremonial grade, oat milk", price: "$5.50" },
+      { name: "Cold Brew", description: "24-hour steeped, smooth finish", price: "$4.50" },
+    ],
+    pastries: [
+      { name: "Butter Croissant", description: "Flaky, golden, classic", price: "$3.50" },
+      { name: "Blueberry Muffin", description: "Fresh berries, moist crumb", price: "$3.00" },
+      { name: "Chocolate Danish", description: "Rich chocolate, buttery layers", price: "$4.00" },
+      { name: "Cinnamon Roll", description: "Warm spice, cream cheese glaze", price: "$4.50" },
+    ],
+    snacks: [
+      { name: "Avocado Toast", description: "Sourdough, chili flakes, lime", price: "$8.50" },
+      { name: "Club Sandwich", description: "Turkey, bacon, fresh greens", price: "$9.00" },
+      { name: "Acai Bowl", description: "Granola, banana, mixed berries", price: "$10.00" },
+      { name: "Caesar Salad", description: "Romaine, parmesan, croutons", price: "$8.00" },
+    ],
+  },
+  navLinks: [
+    { label: "Home", href: "#hero" },
+    { label: "Menu", href: "#menu" },
+    { label: "Gallery", href: "#gallery" },
+    { label: "About", href: "#about" },
+    { label: "Contact", href: "#contact" },
+  ],
+  footerText: "© 2024 The Brew House. All rights reserved.",
+} as const;
