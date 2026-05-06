@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   useEffect(() => {
-    window.location.replace("/index.html");
+    window.location.replace("index.html");
   }, []);
   return (
     <div
@@ -30,7 +30,7 @@ function Index() {
         <h1 style={{ fontSize: 28, marginBottom: 12 }}>Brewhaus Cafe</h1>
         <p style={{ marginBottom: 16, color: "#6B6258" }}>Loading cafe website…</p>
         <a
-          href="/index.html"
+          href="index.html"
           style={{
             color: "#8B5E3C",
             fontWeight: 600,

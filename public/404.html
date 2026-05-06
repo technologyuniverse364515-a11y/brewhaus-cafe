@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A cozy neighborhood cafe — crafted coffee, warm vibes, live events." />
+  <title>Page Not Found - Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    // Simple 404 redirect back to home if on a sub-path
+    // This helps with GitHub Pages SPA routing
+    const path = window.location.pathname;
+    if (path.includes('/brewhaus-cafe/') && !path.endsWith('/index.html')) {
+      // You could implement a more complex redirect here if needed
+    }
+  </script>
+</head>
+<body data-page="home">
+  <nav class="nav" id="nav"></nav>
+
+  <section class="section" style="min-height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+    <div class="container">
+      <h1 style="font-size: 4rem; margin-bottom: 1rem;">404</h1>
+      <h2 style="font-size: 1.5rem; margin-bottom: 2rem;">Oops! Page not found.</h2>
+      <p style="margin-bottom: 2rem;">The page you are looking for doesn't exist or has been moved.</p>
+      <a href="index.html" class="btn btn-primary">Back to Home</a>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+
+  <script src="config/buttons.js"></script>
+  <script src="config/text.js"></script>
+  <script src="config/messages.js"></script>
+  <script src="config/images.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
